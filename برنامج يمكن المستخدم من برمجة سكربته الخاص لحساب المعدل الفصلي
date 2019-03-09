@@ -1,0 +1,26 @@
+#_______برنامج يمكن المستخدم من برمجة سكربته الخاص لحساب المعدل الفصلي_____
+print(":::::::Don't ::::::touch::::::: my:::::: script :::::::it's:::::: art::")
+opiration_file1 = open("البرنامج النهائي.py","w")
+
+Num_modu=input("\n enter num of modules")
+num_mod=int(Num_modu)
+i=0
+opiration_file1.write("S=[00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00]\nC=[00,00,00,00,00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]\ns=0\nc=0")
+while(i<num_mod):
+    i+=1
+
+    j= input("هاد المادة فيها TP ؟؟؟إذا فيها أدخل 1 .... إذا مافيهاش أدخل 2")
+    J=int(j)
+    if (J==1):
+     opiration_file1.write("\n\nprint('{}______cette module a un tp')\n mo{}=input('Entry le nom de module!!')\nPTP=input('proportion de TP' )\n PM=input('porpo des modul ')\nPE=input('  proportion de l exam')\nPT=input('Proportion de TD')\nT=input('Test ')\nE=input('Exam')\nTP=input('TP')\nPS=input('Pres et sed')\nmo{}=[0,1,2,3,4,5,6,7,8,9]\npm=float(PM)\nptp=float(PTP)\npe=float(PE)\npt=float(PT)\ne=float(E)\nt=float(T)\ntp=float(TP)\nps=float(PS)\nmo{}[0]=mo{}[0]+pm\nmo{}[1]=mo{}[1]+ptp\nmo{}[2]=mo{}[2]+pe\nmo{}[3]=mo{}[3]+pt\nmo{}[4]=t\nmo{}[5]=e\nmo{}[6]=tp\nmo{}[7]=tp\nmo{}[8]=(mo{}[3]+mo{}[5])*(mo{}[1])+(mo{}[6]*mo{}[2])\nmo{}[9]=mo{}[7]+(mo{}[4]*mo{}[0])\nprint ('ton moy est',mo{}[8] )\nS[{}]=mo{}[9]\nC[{}]=mo{}[0]".format(i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i))
+
+
+    if (J==2):
+      opiration_file1.write("\n\nprint('{}______cette module a un tp')\nmo{}=input('Entry le nom de module!!')\nPM=input('porpo des modul ')\nPE=input('  proportion de l exam')\nPT=input('Proportion de TD')\nT=input('Test ')\nE=input('Exam')\n\nPS=input('Pres et sed')\nmo{}=[0,1,2,3,4,5,6,7,8,9]\npm=float(PM)\npe=float(PE)\npt=float(PT)\ne=float(E)\nt=float(T)\nps=float(PS)\nmo{}[0]=mo{}[0]+pm\nmo{}[1]=mo{}[1]+ptp\nmo{}[2]=mo{}[2]+pe\nmo{}[3]=mo{}[3]+pt\nmo{}[4]=t\nmo{}[5]=e\nmo{}[6]=0\nmo{}[7]=tp\nmo{}[8]=(mo{}[3]+mo{}[5])*(mo{}[1])+(mo{}[6]*mo{}[2])\nmo{}[9]=mo{}[7]+(mo{}[4]*mo{}[0])\nprint ('ton moy est',mo{}[8] )\nS[{}]=mo{}[9]\nC[{}]=mo{}[0]".format(i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i))
+opiration_file1.write("\ni=0\nwhile(i<{}):\n\ti+=1\n\ts=s+S[i]\n".format(num_mod))
+opiration_file1.write("\nj=0\nwhile(j<{}):\n\tj+=1\n\tc=c+C[j]\n".format(num_mod))
+opiration_file1.write("\n\nprint(s)")
+opiration_file1.write("\n\nprint(c)")
+opiration_file1.write("\n\nprint(s/c)")
+
+opiration_file1.close()
